@@ -94,3 +94,26 @@ Example:
     cur.close()
 
 ## Part 2: Extracting useful Information
+
+Steps:
+1. Take a glance on each table to see if the information is in desired format to perform query.
+2. Create and execute query to get desired information and see in SQLiteStudio if the information looks good.
+(Had to use julianday() instead of DATEDIFF() to get the date difference)
+Example:
+
+    sql_statement = """
+	With Temp1 AS
+	(SELECT a.CustomerID, b.FirstName, b.LastName, c.Country, a.OrderDate, LAG(a.OrderDate) OVER(PARTITION BY a.CustomerID ORDER BY a.OrderDate) as PreviousOrderDate, (julianday(a.OrderDate) - julianday(LAG(a.OrderDate)
+	OVER(PARTITION BY a.CustomerID ORDER BY a.OrderDate))) as difference
+	FROM OrderDetail a INNER JOIN Customer b ON b.CustomerID = a.CustomerID
+	INNER JOIN Country c on c.CountryID = b.CountryID),
+
+	Temp2 AS
+	(SELECT CustomerID, max(difference) AS MaxDaysWithoutOrder FROM Temp1
+	group by CustomerID)
+
+	SELECT DISTINCT a.CustomerID, a.FirstName, a.LastName, a.Country, a.OrderDate, a.PreviousOrderDate, b.MaxDaysWithoutOrder FROM 
+	Temp1 a INNER JOIN Temp2 b on b.MaxDaysWithoutOrder = a.difference and b.CustomerID = a.CustomerID
+	GROUP BY a.CustomerID
+	ORDER BY b.MaxDaysWithoutOrder DESC;
+	"""
