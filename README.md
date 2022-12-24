@@ -1,1 +1,1 @@
-# Data-Wrangling Extract Information - Python, SQL
+# Data Wrangling Extract Information - Python, SQL
