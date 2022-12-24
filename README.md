@@ -20,6 +20,8 @@ Steps:
 
 Example:
 
+Creating OrderDetail Table which has these informations: OrderID, CustomerID, ProductID, OrderDate, QuantityOrdered.
+
     # reading file and exclude the row with column names
     db_file = open(data_filename, 'r')
     lines = db_file.readlines()
@@ -102,6 +104,8 @@ Steps:
 (Had to use julianday() instead of DATEDIFF() to get the date difference)
 
 Example:
+
+Extract longest duration in between two consecutive orders for each customer.
 
     sql_statement = """
 	With Temp1 AS
