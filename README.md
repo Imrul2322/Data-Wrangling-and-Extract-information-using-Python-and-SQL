@@ -98,7 +98,9 @@ Example:
 Steps:
 1. Take a glance on each table to see if the information is in desired format to perform query.
 2. Create and execute query to get desired information and see in SQLiteStudio if the information looks good.
+
 (Had to use julianday() instead of DATEDIFF() to get the date difference)
+
 Example:
 
     sql_statement = """
