@@ -4,6 +4,9 @@
 Worked with a data which needed a lot of works to extract useful information. Created relational tables using different information like countries, regions, customers, products and orders.  For each category, extracted total amount of sales and recommended which products, countries and regions are ahead in sales. 
 
 ## Data Preparation
+
+Dataset link: https://drive.google.com/file/d/1QOeEOTbFID1PQGrxU4Blgpl7eSUYpLtz/view?usp=sharing
+
 The file consists of 11 columns separated by tab and each row is a customer with all of the products they have ordered. Columns are Name, Address, City, Country, Region, ProductName, ProductCategory, ProductCategoryDescription, ProductUnitPrice, QuantityOrdered, OrderDate. Last six columns are linked and each value in a column is separated by semicolon. So, after spliting and zipping them up we get the one information from each column. Basically for each customer, we have multiple data for the last six columns.
 
 ## Tools
@@ -123,3 +126,6 @@ Extract longest duration in between two consecutive orders for each customer.
 	GROUP BY a.CustomerID
 	ORDER BY b.MaxDaysWithoutOrder DESC;
 	"""
+
+## Conclusion
+Information extracted from this project can be helpful to make profitable business decisions like which region / country should have priority when it comes to investment to get maximum return. I am creating few dashboards in Tableau to make those useful information in a more visually appealing way and also to present in a more understandable way in front of audience from different background. 
