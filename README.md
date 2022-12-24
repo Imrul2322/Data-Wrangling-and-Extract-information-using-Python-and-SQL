@@ -1,7 +1,7 @@
 # Data Wrangling, Extract Information from Sales Raw Data - Python, SQL
 
 ## Summary
-Worked with a data which needed a lot of works to extract useful information. Created relational database with tables using different information like countries, regions, customers, products and orders.  For each category, extracted total amount of sales and recommended which products, countries and regions are ahead in sales. 
+Worked with a data which needed data wrangling to extract useful information. Created relational database with tables using different information like countries, regions, customers, products and orders.  For each category (e.g. Country), extracted total amount of sales and recommended which products, countries and regions are ahead in sales. 
 
 ## Data Preparation
 
