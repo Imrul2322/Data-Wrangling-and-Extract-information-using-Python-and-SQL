@@ -1,4 +1,4 @@
-# Data Wrangling, Extract Information from Sales Raw Data - Python, SQL
+# Data Wrangling, Extract Information and Visualization from Sales Raw Data - Python, SQL, Tableau
 
 ## Summary
 Worked with a data which needed data wrangling to extract useful information. Created relational database with tables using different information like countries, regions, customers, products and orders.  For each category (e.g. Country), extracted total amount of sales and recommended which products, countries and regions are ahead in sales. 
@@ -126,6 +126,10 @@ Extract longest duration in between two consecutive orders for each customer.
 	GROUP BY a.CustomerID
 	ORDER BY b.MaxDaysWithoutOrder DESC;
 	"""
+
+## Part 3: Visualization in Tableau
+
+
 
 ## Conclusion
 Information extracted from this project can be helpful to make profitable business decisions like which region / country should have priority when it comes to investment to get maximum return. I am creating few dashboards in Tableau to make those useful information in a more visually appealing way and also to present in a more understandable way in front of audience from different background. 
