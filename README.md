@@ -1,7 +1,7 @@
 # Data Wrangling, Extract Information and Visualization from Sales Raw Data - Python, SQL, Tableau
 
 ## Summary
-Worked with a data which needed data wrangling to extract useful information. Created relational database with tables using different information like countries, regions, customers, products and orders.  For each category (e.g. Country), extracted total amount of sales and recommended which products, countries and regions are ahead in sales. 
+I worked with data that required data wrangling to retrieve information that was useful. created a relational database with tables employing several pieces of data, including nations, regions, clients, goods, and orders. Identify the top-selling items, nations, and regions for each category (for example, Country) based on the total quantity of sales. 
 
 ## Data Preparation
 
@@ -131,12 +131,32 @@ Extract longest duration in between two consecutive orders for each customer.
 ## Part 3: Visualization in Tableau
 
 Steps:
-1. Top country, city, product category and product name have been shown.
-2. Using map, country level information has been provided. City level information is available on hover over the country. If a country is selected, option to enlarge sales information by city has been provided. 
-3. Sales by Product category has been shown. Top products in each category is available upon hover on each product category. If a country is selected in step 2, sales by top products category in that country will be filtered. 
-4. Discrite time series sales data of last three years has been provided with quarter level granularity. It will also be filtered based on country level. 
+1. The top city, nation, product category, and product name are displayed.
+2. Information at the country level has been given using a map. On hover over the nation, information at the city level is displayed. There is an option to expand the sales data by city if a country is chosen.
+3. Product category sales have been displayed. When you hover over each product category, the top products in that category are displayed. Step 2's selection of a country will filter sales data by that nation's most popular product categories.
+4. The last three years' worth of Discrete time series sales data have been given with quarter-level granularity. Additionally, it will be filtered by country level.
 
-![step 1](https://github.com/Imrul2322/Data-Wrangling-and-Extract-information-using-Python-and-SQL/blob/main/Viz%20Assets/main%20dashboard.png "title")
+To view in Tableau Public and interact: https://public.tableau.com/views/SalesReport_16725440065730/Dashboard1?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link
+
+![step 0](https://github.com/Imrul2322/Data-Wrangling-and-Extract-information-using-Python-and-SQL/blob/main/Viz%20Assets/main%20dashboard.png "title")
+
+Figure 1: Main Dashboard
+
+![step 1](https://github.com/Imrul2322/Data-Wrangling-and-Extract-information-using-Python-and-SQL/blob/main/Viz%20Assets/country%20hover.png "title")
+
+Figure 2: Country Hover
+
+![step 2](https://github.com/Imrul2322/Data-Wrangling-and-Extract-information-using-Python-and-SQL/blob/main/Viz%20Assets/select%20country.png "title")
+
+Figure 3: Country Select
+
+![step 3](https://github.com/Imrul2322/Data-Wrangling-and-Extract-information-using-Python-and-SQL/blob/main/Viz%20Assets/expand%20city%20level.png "title")
+
+Figure 4: Expand to city level
+
+![step 4](https://github.com/Imrul2322/Data-Wrangling-and-Extract-information-using-Python-and-SQL/blob/main/Viz%20Assets/product%20cat%20hover.png "title")
+
+Figure 5: Product Category Hover
 
 ## Conclusion
-Information extracted from this project can be helpful to make profitable business decisions like which region / country should have priority when it comes to investment to get maximum return. I am creating few dashboards in Tableau to make those useful information in a more visually appealing way and also to present in a more understandable way in front of audience from different background. 
+When it comes to choosing which country or region to invest in first in order to receive the best return, information gleaned from this project can be useful. Dashboards were developed to provide more detailed information. When appropriately presented to an organization's executive team, the data retrieved using SQL and Tableau can be highly helpful.
