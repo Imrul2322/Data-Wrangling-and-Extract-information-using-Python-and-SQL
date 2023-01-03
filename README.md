@@ -12,6 +12,7 @@ The file consists of 11 columns separated by tab and each row is a customer with
 ## Tools
 1. SQLlite3
 2. Python
+3. Tableau
 
 ## Part 1: Creating Tables
 Steps:
@@ -129,7 +130,13 @@ Extract longest duration in between two consecutive orders for each customer.
 
 ## Part 3: Visualization in Tableau
 
+Steps:
+1. Top country, city, product category and product name have been shown.
+2. Using map, country level information has been provided. City level information is available on hover over the country. If a country is selected, option to enlarge sales information by city has been provided. 
+3. Sales by Product category has been shown. Top products in each category is available upon hover on each product category. If a country is selected in step 2, sales by top products category in that country will be filtered. 
+4. Discrite time series sales data of last three years has been provided with quarter level granularity. It will also be filtered based on country level. 
 
+![step 1](https://github.com/Imrul2322/Data-Wrangling-and-Extract-information-using-Python-and-SQL/blob/main/Viz%20Assets/main%20dashboard.png "title")
 
 ## Conclusion
 Information extracted from this project can be helpful to make profitable business decisions like which region / country should have priority when it comes to investment to get maximum return. I am creating few dashboards in Tableau to make those useful information in a more visually appealing way and also to present in a more understandable way in front of audience from different background. 
